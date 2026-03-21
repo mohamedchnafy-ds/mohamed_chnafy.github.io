@@ -113,6 +113,38 @@
     }
 </style>
 <style>
+/* ===== DEPLOY BADGE ===== */
+#deploy-badge {
+    position: fixed;
+    bottom: 14px;
+    right: 14px;
+    z-index: 99999;
+    background: rgba(13,13,13,0.85);
+    border: 1px solid rgba(44,152,240,0.5);
+    color: rgba(255,255,255,0.65);
+    font-family: monospace;
+    font-size: 10px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    backdrop-filter: blur(4px);
+    pointer-events: none;
+    letter-spacing: 0.5px;
+}
+#deploy-badge .deploy-dot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #2c98f0;
+    margin-right: 5px;
+    animation: blink 2s infinite;
+    vertical-align: middle;
+}
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.2; }
+}
+
 /* ===== HERO SECTION AMÉLIORÉE ===== */
 .hero-tag {
     font-size: 14px;
@@ -290,7 +322,7 @@
 			<section id="colorlib-hero" class="js-fullheight" data-section="home">
 			<div class="flexslider js-fullheight">
 				<ul class="slides">
-			   	<li style="background-image: url(images/fond-blanc-gris.jpg);">
+			   	<li style="background: #0d0d0d;">
 			   		<div class="overlay"></div>
 			   		<div class="container-fluid">
 			   			<div class="row">
@@ -317,7 +349,7 @@
 				   		</div>
 			   		</div>
 			   	</li>
-			   	<li style="background-image: url(images/fond-blanc-gris.jpg);">
+			   	<li style="background: #0d0d0d;">
 			   		<div class="overlay"></div>
 			   		<div class="container-fluid">
 			   			<div class="row">
@@ -1023,6 +1055,12 @@
 		});
 	});
 	</script>
+
+	<!-- Deploy badge -->
+	<div id="deploy-badge">
+		<span class="deploy-dot"></span>
+		<span id="deploy-ts">deploy 2026-03-21 v3</span>
+	</div>
 
 	<!-- Mouse spotlight effect -->
 	<div id="mouse-glow"></div>
