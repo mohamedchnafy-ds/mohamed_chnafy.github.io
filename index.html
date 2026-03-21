@@ -280,6 +280,128 @@
     }
 }
 </style>
+
+<!-- =============================================
+     DARK THEME GLOBAL — chargé en dernier, priorité maximale
+     ============================================= -->
+<style>
+/* Base */
+html, body {
+    background-color: #0d0d0d !important;
+    color: rgba(255,255,255,0.78) !important;
+}
+
+/* Sidebar */
+#colorlib-aside {
+    background: #111111 !important;
+    border-right: 1px solid #1e1e1e !important;
+}
+#colorlib-aside #colorlib-logo a,
+#colorlib-aside .position a,
+#colorlib-aside #colorlib-main-menu ul li a {
+    color: rgba(255,255,255,0.75) !important;
+}
+#colorlib-aside #colorlib-main-menu ul li a:hover {
+    color: #fff !important;
+}
+#colorlib-aside .colorlib-footer,
+#colorlib-aside .colorlib-footer span {
+    color: rgba(255,255,255,0.4) !important;
+}
+
+/* Titres */
+h1, h2, h3, h4, h5, h6 {
+    color: #fff !important;
+}
+
+/* Hero h1/h2 inline overrides */
+#colorlib-hero .flexslider .slider-text > .slider-text-inner h1 {
+    color: #fff !important;
+}
+#colorlib-hero .flexslider .slider-text > .slider-text-inner h2 {
+    color: rgba(255,255,255,0.7) !important;
+}
+.kpi-label { color: rgba(255,255,255,0.55) !important; }
+
+/* Sections */
+.colorlib-about, .colorlib-skills, .colorlib-education,
+.colorlib-experience, .colorlib-services, .colorlib-work,
+.colorlib-blog, .colorlib-contact {
+    background: #0d0d0d !important;
+}
+
+/* Cards / panels */
+.panel, .panel-default {
+    background: #141414 !important;
+    border-color: #2a2a2a !important;
+}
+.panel-heading, .panel-heading a,
+.panel-heading a.collapsed {
+    background: #1a1a1a !important;
+    color: rgba(255,255,255,0.8) !important;
+    border-color: #2a2a2a !important;
+}
+.panel-body {
+    background: #141414 !important;
+    border-color: #2a2a2a !important;
+    color: rgba(255,255,255,0.7) !important;
+}
+
+/* Timeline */
+.timeline-centered:before { background: #2a2a2a !important; }
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label {
+    background: #141414 !important;
+    border-color: #2a2a2a !important;
+}
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2,
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 a,
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label p {
+    color: rgba(255,255,255,0.75) !important;
+}
+
+/* Progress bars */
+.progress { background: #222 !important; }
+
+/* Blog */
+.blog-entry .desc { background: #141414 !important; }
+.blog-entry .desc h3 a { color: rgba(255,255,255,0.9) !important; }
+.blog-entry .desc span { color: rgba(255,255,255,0.5) !important; }
+
+/* Work */
+.work-menu span a { color: rgba(255,255,255,0.65) !important; }
+.project .desc { background: rgba(15,15,15,0.95) !important; }
+.project .desc span a, .project .desc span { color: rgba(255,255,255,0.8) !important; }
+
+/* Form */
+.form-control {
+    background: #1a1a1a !important;
+    border-color: #2a2a2a !important;
+    color: rgba(255,255,255,0.75) !important;
+}
+
+/* Hire / btn sections */
+.hire { background: #111 !important; }
+
+/* Pagination */
+.pagination > li > a {
+    background: #1a1a1a !important;
+    border-color: #2a2a2a !important;
+    color: rgba(255,255,255,0.7) !important;
+}
+
+/* Nav toggle (mobile) */
+.colorlib-nav-toggle i,
+.colorlib-nav-toggle i::before,
+.colorlib-nav-toggle i::after {
+    background: #fff !important;
+}
+
+/* Social icons */
+.colorlib-social li a { color: rgba(255,255,255,0.7) !important; }
+
+/* Supprimer borders/bg blancs résiduels */
+.border { border-color: #1e1e1e !important; }
+</style>
 	</head>
 	<body>
 	<div id="colorlib-page">
@@ -1059,7 +1181,7 @@
 	<!-- Deploy badge -->
 	<div id="deploy-badge">
 		<span class="deploy-dot"></span>
-		<span id="deploy-ts">deploy 2026-03-21 v3</span>
+		<span id="deploy-ts">deploy 2026-03-21 v4</span>
 	</div>
 
 	<!-- Mouse spotlight effect -->
