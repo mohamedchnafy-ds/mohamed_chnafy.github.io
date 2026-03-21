@@ -1023,6 +1023,22 @@
 		});
 	});
 	</script>
+
+	<!-- Mouse spotlight effect -->
+	<div id="mouse-glow"></div>
+	<script>
+		(function() {
+			var root = document.documentElement;
+			document.addEventListener('mousemove', function(e) {
+				root.style.setProperty('--mouse-x', e.clientX + 'px');
+				root.style.setProperty('--mouse-y', e.clientY + 'px');
+			});
+			document.addEventListener('mouseleave', function() {
+				root.style.setProperty('--mouse-x', '-9999px');
+				root.style.setProperty('--mouse-y', '-9999px');
+			});
+		})();
+	</script>
 	</body>
 </html>
 
